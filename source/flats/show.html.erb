@@ -1,0 +1,20 @@
+<% flat = data.flats[owner] %>
+
+<div class="banner" style="background-image: linear-gradient(-225deg,rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>')">
+</div>
+
+<div class="wraper-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="content">
+          <div class="profil">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+            <p><%= owner.capitalize %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
